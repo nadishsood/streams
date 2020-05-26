@@ -1,0 +1,14 @@
+How to not navigate with react router.
+
+Don't use anchor tags to route between components. Because web browser dumps old html/js/data and
+reloads. See the network monitor in chrome. 
+
+link tag prevents the page from getting reloaded when navigating in our application. 
+SPA - clicking on links and moving around but using the same index.html, not getting it again and again. 
+
+Always visible components: 
+    just add that component outside the browser router. It'll always be shown 
+    regardless of the route we are on. 
+
+    we later move header inside the browserrouter but withut a path so it will still be always visible. 
+    We do this because otherwise <link> can not be used outside of router.
