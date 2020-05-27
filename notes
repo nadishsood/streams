@@ -32,3 +32,5 @@ but that should happen automatically.
  this.auth.isSignedIn.listen(this.onAuthChange); will change the text automaticallty. 
 
 
+//all our authentication rn is in the google auth component - see commit, 
+We may now want to move it to redux after intergrating redux. 
