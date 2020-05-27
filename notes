@@ -34,3 +34,6 @@ but that should happen automatically.
 
 //all our authentication rn is in the google auth component - see commit, 
 We may now want to move it to redux after intergrating redux. 
+
+Redux architecture design 220. 
+
