@@ -12,3 +12,23 @@ Always visible components:
 
     we later move header inside the browserrouter but withut a path so it will still be always visible. 
     We do this because otherwise <link> can not be used outside of router.
+
+Section 17: OAuth Authentication 
+
+clientId: 
+462063278023-ohi1u73j0v3sigkie80qu70l0tj4345v.apps.googleusercontent.com
+
+//gapi.load is used to fetch in the additional js code and load it into the library. 
+//gapi now gets more functions available on it. 
+//init is also an asynchronous function
+//load - have to use a callback object, init - returns a promise, therefore can use then
+
+//window.gapi.auth2.getAuthInstance() returns an authentication object. 
+//isSignedIn in the state is null - we dont know whether or not a user is signed in. 
+
+//google auth holds authentication between refreshes. 
+//earlier we had to refresh page to change the signed in not signed in text, 
+but that should happen automatically. 
+ this.auth.isSignedIn.listen(this.onAuthChange); will change the text automaticallty. 
+
+
