@@ -37,3 +37,17 @@ We may now want to move it to redux after intergrating redux.
 
 Redux architecture design 220. 
 
+we will now take our local store and take it to the redux store (central). This also helps
+us to keep the sign in and sign out data into some central location for other components to 
+access rather than just keep it with the googleAuth component. It is a lot of work, 
+but worth the tradeoff. We keep the isloggedIn state in the store and pass it back into the
+component. 
+
+We're taking the above approach because Stephen wanted to keep the authentication logic inside the 
+component so that we can easily figure it out later.
+
+With the other approach which sticks more closely to redux:
+ We want only our action creators to be the one to initiate change in state of an application. 
+ gApi auth will be accesible throught the action creators, not the component. 
+
+
