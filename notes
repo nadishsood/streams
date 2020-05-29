@@ -13,7 +13,7 @@ Always visible components:
     we later move header inside the browserrouter but withut a path so it will still be always visible. 
     We do this because otherwise <link> can not be used outside of router.
 
-Section 17: OAuth Authentication 
+Section 17: OAuth Authentication
 
 clientId: 
 462063278023-ohi1u73j0v3sigkie80qu70l0tj4345v.apps.googleusercontent.com
@@ -50,4 +50,7 @@ With the other approach which sticks more closely to redux:
  We want only our action creators to be the one to initiate change in state of an application. 
  gApi auth will be accesible throught the action creators, not the component. 
 
+
+//all the data in our redux store falls away when we refresh, but using a debug session, 
+the redux dev tool persists data even across refreshes. 
 

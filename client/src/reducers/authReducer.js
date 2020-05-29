@@ -24,5 +24,3 @@ export default (state= INITIAL_STATE, action) => {
 
 //FIRST TIME when this runs, then when it runs - see video 223. 
 
-
-
