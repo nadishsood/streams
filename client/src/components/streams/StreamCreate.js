@@ -1,6 +1,8 @@
 import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 import { exact, object } from 'prop-types';
+import { createStream } from './../../actions';
+import {connect} from 'react-redux'
 
 class StreamCreate extends React.Component{
 
@@ -15,7 +17,7 @@ class StreamCreate extends React.Component{
         );
     }
     onSubmit = (formValues) =>{
-        // console.log(formValues);
+        this.props.createStream(formValues);
     }
     renderError=(meta)=>{
         const error = meta.error;
@@ -50,11 +52,12 @@ const validate = (formValues) =>{
     return errors;
 }
 
-export default reduxForm({
+const formWrapped = reduxForm({
     form: 'streamCreate', 
     validate
 })(StreamCreate);
 
+export default connect(null, {createStream})(formWrapped);
 
 //Field is a react component whereas reduxForm is a fn, therefore diff naming convention. 
 // //redux form adds tons of props into our comp after configuration. 

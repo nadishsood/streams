@@ -54,3 +54,7 @@ With the other approach which sticks more closely to redux:
 //all the data in our redux store falls away when we refresh, but using a debug session, 
 the redux dev tool persists data even across refreshes. 
 
+
+//we take our streamlist from our state, and turn it into an array before it goes into our component 
+to render it
+
