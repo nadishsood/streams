@@ -9,6 +9,31 @@
       "title": "second stream",
       "description": "sdflkjaskfl",
       "id": 2
+    },
+    {
+      "title": "my stream",
+      "description": "hi welcome to my stream",
+      "userId": {
+        "isSignedIn": true,
+        "userId": "114476006036798157160"
+      },
+      "id": 3
+    },
+    {
+      "title": "New Stream updated",
+      "description": "This is legendary",
+      "id": 4
+    },
+    {
+      "title": "Me Streaming component Reuse updated",
+      "description": "Watch me do it",
+      "id": 5
+    },
+    {
+      "title": "fge updated",
+      "description": "dfgd",
+      "userId": "114476006036798157160",
+      "id": 6
     }
   ]
 }

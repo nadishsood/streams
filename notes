@@ -57,4 +57,47 @@ the redux dev tool persists data even across refreshes.
 
 //we take our streamlist from our state, and turn it into an array before it goes into our component 
 to render it
+//we associate our user id in the createstream action. 
+
+
+intentional vs programmatic navigation
+    prog: run code to navigate user somewhere else after some event. 
+            history object created by the browserRouter keeps track of the address bar and 
+            can also change the address in the add bar. We have access to the history object
+            inside the component but not in the action creator. (see video 262). We could pass
+            it into our action creator from the comp? No, use an alternative solution - 
+            Solution: Browser Router creates the history object, let us ourselves create the history
+            object, import that file and use it instead of letting react router do it. 
+
+            If we create a new history object, we do not use the browser router 
+            as the top level comp. If we make the history obj, we use a simple router, 
+            not a browser router anymore. 
+
+
+url based routing: 
+    passing id into url in edit, delete and show paths. 
+
+
+component isolation with react router: 
+
+
+275. 
+StreamEdit passes props to ReduxForm and not to StreamForm, since StreamForm
+is wrapped by ReduxForm. So we can pass initialValues prop with names of titles
+and description from streamEdit into 
+the Redux Form. 
+
+276. 
+Problem with console.log check the video: 
+formValues should only contain the changes that should be made to our backend, so userid 
+and id should not be there. In general, the backend server might expect only the values to be changed
+in the change set being sent. 
+
+the user id and all are being shown because we earlier passed the entire stream object into the form 
+we use lodash to only pass values that we expect to change. 
+ 
+
+277: 
+when we edited a stream edit and delete buttons disappeared. 
+
 
